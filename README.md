@@ -21,16 +21,6 @@ We welcome contributions to enhance this repository. Feel free to fork the repos
 
 Please note that this API is for educational and demonstrative purposes only. The product details, prices, and brands are fictional and not indicative of real-world offerings.
 
-## Getting Started
-
-To get started, clone the repository and explore the various product categories. You can also contribute by following these steps:
-
-1. Fork the repository.
-2. Create a new branch for your modifications: `git checkout -b feature/new-products`
-3. Make your changes.
-4. Commit your changes: `git commit -m 'Added new products'`
-5. Push to the branch: `git push origin feature/new-products`
-6. Create a pull request.
 
 ## Start Styling!
 
