@@ -1,0 +1,53 @@
+body{
+    background-color: #f4f0db;
+}
+.btn{
+    background-color: #ae0000;
+    color: white;
+    border: solid 2px #ae0000;
+    border-radius: 25px;
+   
+}
+.btn:hover{
+    background-color: white;
+    color: #ae0000;
+}
+.card-body{
+    color: black;
+    overflow: hidden;
+    text-align: center;
+}
+.card-img-top:hover{
+transition: 0.5s ease-in-out;
+transform: scale(1.05);
+}
+
+#products_card{
+    overflow: hidden;
+}
+
+#products_card{
+    background-color: white;
+}
+
+#sale{
+    background-color: rgb(35, 33, 33);
+}
+
+#products_card:hover #sale{
+    background-color: white !important;
+    transition-duration: 500ms;
+}
+
+#products_card:hover{
+    background-color: rgb(35, 33, 33);
+    transition-duration: 500ms; 
+}
+
+#products_card:hover .card-body{
+    color: white;
+    transition-duration: 500ms;
+}
+h3{
+    color: #ae0000;
+}

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prdocuts </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <script>
+        fetch('data.json')
+        .then(response => response.json())
+        .then(json =>
+        {
+            console.log(json);
+
+            var url = (window.location).href;
+            // alert(url);
+            var id = url.substring(url.lastIndexOf('=') + 1);
+   
+
+            var content = document.getElementById("content");
+            var data = "";
+
+            //for men shirt
+            for(var i of json.menshirt)
+    
+            {
+                if(id == i.id)
+                {
+                    data += `
+             
+                <div class="col-12 col-md-4 shadow ">
+                    <img src="${i.image}"  class="card-img-top " alt="">
+                </div>
+
+                <div class="col-12 col-md-8">
+                    <div class="card-body ">
+                        <h1> ${i.brand}</h1>  
+                     
+                        <p> <b> ${i.name} </b><p>
+                        <hr>
+                         <p> Print High Temp PEEK, PEKK, CF-PEEK, ULTEM™ Ultra Fast. Best Price to Performance Value. Print Highest-Performance and Engineering Materials with Superior Print Quality. Dedicated Software. Schedule a Demo Today. Guaranteed Print Quality. Print with Composites. High Temperature Printers </p>
+                        <hr>
+                        <h6>Size:-  ${i.size}</h6>
+                        <hr>
+                        <h5>Price:- ${i.price} &nbsp; Sale:- ${i.sale} </h5>
+                        <hr>  
+                        <h5> Reviews:  &nbsp; ${i.reviews}<i class="fa fa-star text-warning"></i></h5>
+                            <hr>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>            
+                        <a href="#" class="btn btn-danger">Add To Cart</a>     
+                </div>    
+                </div>
+
+                ` 
+                
+
+
+                break;
+                }
+            }
+
+            //for female shirt
+            for(var i of json.femaleshirt)
+    
+             {
+        if(id == i.id)
+        {
+            data += `
+     
+        <div class="col-12 col-md-4">
+            <img src="${i.image}"  class="card-img-top" alt="">
+        </div>
+
+        <div class="col-12 col-md-8">
+            <div class="card-body ">
+                        <h1> ${i.brand}</h1>  
+                     
+                        <p> <b> ${i.name} </b><p>
+                        <hr>
+                         <p> Get Manufacturer Companies In Usa. Discover Millions Of Results Here. Discover Us Now! Fast and Trusted. Easy Access Information. Simple in Use. All the Answers. Multiple Sources Combined. Types: Information, Combined Web Results, Easy & Fast, 99% Match. </p>
+                        <hr>
+                        <h6>Size:-  ${i.size}</h6>
+                        <hr>
+                        <h5>Price:- ${i.price} &nbsp; Sale:- ${i.sale} </h5>
+                        <hr>  
+                        <h5> Reviews:  &nbsp; ${i.reviews}<i class="fa fa-star text-warning"></i></h5>
+                            <hr>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>            
+                        <a href="#" class="btn btn-danger">Add To Cart</a>     
+                </div>    
+        </div>
+
+        ` 
+        break;
+        }
+    }
+//menpants
+    for(var i of json.menpants)
+    
+             {
+        if(id == i.id)
+        {
+            data += `
+     
+        <div class="col-12 col-md-4">
+            <img src="${i.image}"  class="card-img-top" alt="">
+        </div>
+
+        <div class="col-12 col-md-8">
+            <div class="card-body ">
+                        <h1> ${i.brand}</h1>  
+                     
+                        <p> <b> ${i.type} </b><p>
+                        <hr>
+                         <p> Get Manufacturer Companies In Usa. Discover Millions Of Results Here. Discover Us Now! Fast and Trusted. Easy Access Information. Simple in Use. All the Answers. Multiple Sources Combined. Types: Information, Combined Web Results, Easy & Fast, 99% Match. </p>
+                        <hr>
+                        <h6>Size:-  ${i.size}</h6>
+                        <hr>
+                        <h5>Price:- ${i.price} &nbsp; Sale:- ${i.sale} </h5>
+                        <hr>  
+                        <h5> Reviews:  &nbsp; ${i.reviews}<i class="fa fa-star text-warning"></i></h5>
+                            <hr>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>            
+                        <a href="#" class="btn btn-danger">Add To Cart</a>     
+                </div>
+        </div>
+
+        ` 
+        break;
+        }
+    }
+    //female pants
+
+    for(var i of json.femalepants)
+    
+            {
+                if(id == i.id)
+                {
+                    data += `
+             
+                <div class="col-12 col-md-4 shadow ">
+                    <img src="${i.image}"  class="card-img-top " alt="">
+                </div>
+
+                <div class="col-12 col-md-8">
+                    <div class="card-body ">
+                        <h1> ${i.brand}</h1>  
+                     
+                        <p> <b> ${i.type} </b><p>
+                        <hr>
+                         <p> Throughout much of Western history, women's clothing has been very different from men's clothing, and society has made strict rules requiring individuals to dress according to their gender. For the most part these rules have defined trousers as men's clothing. </p>
+                        <hr>
+                        <h6>Size:-  ${i.size}</h6>
+                        <hr>
+                        <h5>Price:- ${i.price} &nbsp; Sale:- ${i.sale} </h5>
+                        <hr>  
+                        <h5> Reviews:  &nbsp; ${i.reviews}<i class="fa fa-star text-warning"></i></h5>
+                            <hr>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>            
+                        <a href="#" class="btn btn-danger">Add To Cart</a>     
+                     
+                </div>    
+                </div>
+
+                ` 
+                break;
+                }
+            }
+
+            //for jackets
+
+            for(var i of json.jackets)
+    
+    {
+        if(id == i.id)
+        {
+            data += `
+     
+        <div class="col-12 col-md-4 shadow ">
+            <img src="${i.image}"  class="card-img-top " alt="">
+        </div>
+
+        <div class="col-12 col-md-8">
+            < <div class="col-12 col-md-8">
+                    <div class="card-body ">
+                        <h1> ${i.brand}</h1>  
+                     
+                        <p> <b> ${i.type} </b><p>
+                        <hr>
+                         <p> Throughout much of Western history, women's clothing has been very different from men's clothing, and society has made strict rules requiring individuals to dress according to their gender. For the most part these rules have defined trousers as men's clothing. </p>
+                        <hr>
+                        <h6>Size:-  ${i.size}</h6>
+                        <hr>
+                        <h5>Price:- ${i.price} &nbsp; Sale:- ${i.sale} </h5>
+                        <hr>  
+                        <h5> Reviews:  &nbsp; ${i.reviews}<i class="fa fa-star text-warning"></i></h5>
+                            <hr>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>            
+                        <a href="#" class="btn btn-danger">Add To Cart</a>     
+                     
+                </div>  
+        </div>
+
+        ` 
+        break;
+        }
+    }
+
+    // for hoodies
+     
+
+     for(var i of json.hoodies)
+    
+    {
+        if(id == i.id)
+        {
+            data += `
+     
+        <div class="col-12 col-md-4 shadow ">
+            <img src="${i.image}"  class="card-img-top " alt="">
+        </div>
+
+        <div class="col-12 col-md-8">
+            <div class="col-12 col-md-8">
+                    <div class="card-body ">
+                        <h1> ${i.brand}</h1>  
+                     
+                     
+                        <hr>
+                         <p> Throughout much of Western history, women's clothing has been very different from men's clothing, and society has made strict rules requiring individuals to dress according to their gender. For the most part these rules have defined trousers as men's clothing. </p>
+                        <hr>
+                        <h6>Size:-  ${i.size}</h6>
+                        <hr>
+                        <h5>Price:- ${i.price} &nbsp; Sale:- ${i.sale} </h5>
+                        <hr>  
+                        <h5> Reviews:  &nbsp; ${i.reviews}<i class="fa fa-star text-warning"></i></h5>
+                            <hr>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>            
+                        <a href="#" class="btn btn-danger">Add To Cart</a>     
+                     
+                </div>  
+        </div>
+
+        ` 
+        break;
+        }
+    }
+
+
+    
+    // for female showes
+     
+
+    for(var i of json.femaleshoes)
+    {
+        if(id == i.id)
+        {
+            data += `
+     
+        <div class="col-12 col-md-4 shadow ">
+            <img src="${i.image}"  class="card-img-top " alt="">
+        </div>
+
+        <div class="col-12 col-md-8">
+            <div class="col-12 col-md-8">
+                    <div class="card-body ">
+                        <h1> ${i.brand}</h1>  
+                     
+                        <p> <b> ${i.description} </b><p>
+                        <hr>
+                         <p>arilyn Monroe once said, “Give a girl right shoes and she will conquer the world”.Certainly, the right pair of shoes can make you feel amazing and heels will add a statement to any look.These grey pointed heels shoes will make you look bewitching and show off your sense of adventure. They will make you look taller and give you an attractive look that is both feminine and beautiful. </p>
+                        <hr>
+                        <h6>Size:-  ${i.size}</h6>
+                        <hr>
+                        <h5>Price:- ${i.price} &nbsp; Sale:- ${i.sale} </h5>
+                        <hr>  
+                        <h5> Reviews:  &nbsp; ${i.reviews}<i class="fa fa-star text-warning"></i></h5>
+                            <hr>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>            
+                        <a href="#" class="btn btn-danger">Add To Cart</a>     
+                     
+                </div>  
+        </div>
+
+        ` 
+        break;
+        }
+    }
+
+     // for male showes
+     
+
+     for(var i of json.maleshoes)
+    {
+        if(id == i.id)
+        {
+            data += `
+     
+        <div class="col-12 col-md-4 shadow ">
+            <img src="${i.image}"  class="card-img-top " alt="">
+        </div>
+
+        <div class="col-12 col-md-8">
+            <div class="card-body ">
+                        <h1> ${i.brand}</h1>  
+                     
+                       
+                        <hr>
+                         <p> RangeMe is the industry standard tool for retail product discovery, sourcing & purchasing. Brands can leverage a new sales channel to sell their products from their RangeMe profile. Become a Trusted Supplier. Create Your Free Profile. Get Discovered By Buyers. Brands: The Market, ProHealth, heinen's </p>
+                        <hr>
+                        <h6>Size:-  ${i.size}</h6>
+                        <hr>
+                        <h5>Price:- ${i.price} &nbsp; Sale:- ${i.sale} </h5>
+                        <hr>  
+                        <h5> Reviews:  &nbsp; ${i.reviews}<i class="fa fa-star text-warning"></i></h5>
+                            <hr>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>            
+                        <a href="#" class="btn btn-danger">Add To Cart</a>     
+                     
+                </div>
+        </div>
+
+        ` 
+        break;
+        }
+    }
+
+     // for accessories
+     
+
+     for(var i of json.accessories)
+    {
+        if(id == i.id)
+        {
+            data += `
+     
+        <div class="col-12 col-md-4 shadow ">
+            <img src="${i.image}"  class="card-img-top " alt="">
+        </div>
+
+        <div class="col-12 col-md-8">
+            <div class="col-12 col-md-8">
+            <div class="card-body ">
+                        <h1> ${i.brand}</h1>  
+                     
+                       
+                        <hr>
+                         <p>Smart watches and glasses have the potential to support health in everyday living by: enabling self-monitoring of personal activity; obtaining feedback based on activity measures; allowing for in-situ surveys to identify patterns of behavior; and supporting bi-directional communication with health care providers and family members. However, smart watches are an emerging technology and research with these devices is at a nascent stage. </p>
+                        <hr>
+                        <h6>Size:-  ${i.size}</h6>
+                        <hr>
+                        <h5>Price:- ${i.price} &nbsp; Sale:- ${i.sale} </h5>
+                        <hr>  
+                        <h5> Reviews:  &nbsp; ${i.reviews}<i class="fa fa-star text-warning"></i></h5>
+                            <hr>
+                        <a href="#" class="btn btn-danger">Add To Cart</a>            
+                        <a href="#" class="btn btn-danger">Add To Cart</a>     
+                     
+                </div>
+        </div>
+        </div>
+
+        ` 
+        break;
+        }
+    }
+
+            // console.log(data);
+            content.innerHTML = data;
+
+        })
+    </script>
+</head>
+<body>
+    <!-- for men shirt -->
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-11 mx-auto">
+                <div class="row gy-2" id="content">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- for female shirt -->
+  
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-11 mx-auto">
+                <div class="row gy-2" id="content">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- men pants -->
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-11 mx-auto">
+                <div class="row gy-2" id="content">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- female pants -->
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-11 mx-auto">
+                <div class="row gy-2" id="content">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jackets -->
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-11 mx-auto">
+                <div class="row gy-2" id="content">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- hoodies -->
+      <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-11 mx-auto">
+                <div class="row gy-2" id="content">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

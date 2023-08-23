@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+<style>
+   
+</style>
+<body>
+    <script>
+        fetch('./data.json')
+            .then(response => response.json())
+            .then(json => {
+
+                var content = document.getElementById("content");
+                var data = '';
+                // for loop
+
+                //for man-shirt 
+                for (var i in json.menshirt) {
+                    data += `
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 pt-4">
+                            <div class="shadow" id="products_card">
+                                <img src="${json.menshirt[i].image}" 'height=200px' class="card-img-top" alt="">
+                                <div  class="card-body">
+                                     
+                                     <p>${json.menshirt[i].category}</p
+                                      <p>${json.menshirt[i].brand}</p>  
+                                     <p class=" text-danger" id="sale">Sale: ${json.menshirt[i].sale}</p>
+                                
+                                     <p>Price: ${json.menshirt[i].price}</p>
+                                    
+                                     <p> <span> <i class="fa fa-star text-warning"></i>${json.menshirt[i].reviews}</span></p>
+
+                                     <a href="detail.html?id=${json.menshirt[i].id}" class="btn  mx-auto d-block my-2" "> Details</a>
+
+                                     <a href="#" class="btn  mx-auto d-block my-2"> Add To Cart </a>
+                                </div>
+                            </div>
+                        </div>
+
+                `
+                }
+
+                //for loop female-shirt
+                for (var i in json.femaleshirt) {
+                    data += `
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 pt-4">
+                            <div class="shadow" id="products_card">
+                                <img src="${json.femaleshirt[i].image}" 'height=200px' class="card-img-top" alt="">
+                            
+                                <div class="card-body">
+                              
+                                    <p>${json.femaleshirt[i].category}</p> 
+                                     
+                                      <p>${json.femaleshirt[i].brand}</p>  
+
+                                     <p class=" text-danger" id="sale">Sale: ${json.femaleshirt[i].sale}</p>
+
+                                     <p>Price: ${json.femaleshirt[i].price}</p>
+                              
+                                     <p> <span> ${json.femaleshirt[i].reviews}<i class="fa fa-star text-warning"></i></span></p>
+
+
+                                    <a href="detail.html?id=${json.femaleshirt[i].id}" class="btn mx-auto d-block my-2" style="border-radius : 25px"> Details</a>
+                                    <a href="detail.html?id=" class="btn mx-auto d-block my-2"> Add To Cart </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                `
+                }
+
+                // for loop men-pants
+                for (var i in json.menpants) {
+                    data += `
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 pt-4">
+                            <div class="shadow" id="products_card">
+                                <img src="${json.menpants[i].image}" 'height=200px' class="card-img-top" alt="">
+                            
+                                <div class="card-body">
+                                     <p>${json.menpants[i].type}</p>
+                                 
+                                     <p>Brand: ${json.menpants[i].brand}</p>  
+
+                                     <p class=" text-danger" id="sale">Sale: ${json.menpants[i].sale}</p>
+
+                                     <p>Price: ${json.menpants[i].price}</p>
+
+                                     <p> <span>  ${json.menpants[i].reviews}<i class="fa fa-star text-warning"></i></span></p>
+
+                               
+                                     <a href="detail.html?id=${json.menpants[i].id}" class="btn  mx-auto d-block my-2" "> Details</a>
+                                    <a href="#" class="btn  mx-auto d-block my-2"> Add To Cart </a>
+                                </div>
+                            </div>
+                        </div>
+
+                `
+                }
+
+                // for loop female-pants
+
+                for (var i in json.femalepants) {
+                    data += `
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 pt-4">
+                            <div class="shadow" id="products_card">
+                                <img src="${json.femalepants[i].image}" 'height=200px' class="card-img-top" alt="">
+                            
+                                <div class="card-body">
+                                     <p>${json.femalepants[i].type}</p>
+                                      <p>Brand: ${json.femalepants[i].brand}</p>  
+                                     <p class=" text-danger" id="sale" >Sale: ${json.femalepants[i].sale}</p>
+                                     <p>Price: ${json.femalepants[i].price}</p>
+
+                                     <p> <span>  ${json.femalepants[i].reviews}<i class="fa fa-star text-warning"></i></span></p>
+                                     <a href="detail.html?id=${json.femalepants[i].id}" class="btn  mx-auto d-block my-2" "> Details</a>
+                                    <a href="#" class="btn  mx-auto d-block my-2"> Add To Cart </a>
+                                </div>
+                            </div>
+                        </div>
+
+                `
+                }
+
+                //for loop jackets
+                for (var i in json.jackets) {
+                    data += `
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 pt-4">
+                            <div class="shadow" id="products_card">
+                                <img src="${json.jackets[i].image}" 'height=200px' class="card-img-top" alt="">
+                                <div class="card-body">
+                                     <p>${json.jackets[i].name}</p>
+                                      <p>${json.jackets[i].brand}</p>  
+                                     <p class=" text-danger" id="sale">Sale: ${json.jackets[i].sale}</p>
+                                     <p>Size: ${json.jackets[i].size}</p>
+                                     <p>Price: ${json.jackets[i].price}</p>
+                                     <p> <span>  ${json.jackets[i].reviews}<i class="fa fa-star text-warning"></i></span></p>
+                                     <a href="detail.html?id=${json.jackets[i].id}" class="btn  mx-auto d-block my-2" "> Details</a>
+                                     <a href="#" class="btn  mx-auto d-block my-2"> Add To Cart </a>
+                                </div>
+                            </div>
+                        </div>
+
+                `
+                }
+
+                //for loop hoodies
+
+                for (var i in json.hoodies) {
+                    data += `
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 pt-4">
+                            <div class="shadow" id="products_card">
+                                <img src="${json.hoodies[i].image}" 'height=200px' class="card-img-top" alt="">
+                                <div class="card-body">
+                                     <p>${json.hoodies[i].name}</p>
+                                      <p>${json.hoodies[i].brand}</p>  
+                                     <p class=" text-danger" id="sale">Sale: ${json.hoodies[i].sale}</p>
+                                     <p>Size: ${json.hoodies[i].size}</p>
+                                     <p>Price: ${json.hoodies[i].price}</p>
+                                     <p> <span>  ${json.hoodies[i].reviews}<i class="fa fa-star text-warning"></i></span></p>
+                                     <a href="detail.html?id=${json.hoodies[i].id}" class="btn  mx-auto d-block my-2" "> Details</a>
+                                     <a href="#" class="btn  mx-auto d-block my-2"> Add To Cart </a>
+                                </div>
+                            </div>
+                        </div>
+
+                `
+                }
+                // for loop female shoes
+                for (var i in json.femaleshoes) {
+                    data += `
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 pt-4">
+                            <div class="shadow" id="products_card">
+                                <img src="${json.femaleshoes[i].image}" 'height=200px' class="card-img-top" alt="">
+                                <div class="card-body">
+                                     <p>${json.femaleshoes[i].description}</p>
+                                      <p>${json.femaleshoes[i].brand}</p>  
+                                     <p class=" text-danger" id="sale">Sale: ${json.femaleshoes[i].sale}</p>
+                                     <p>Size: ${json.femaleshoes[i].size}</p>
+                                     <p>Price: ${json.femaleshoes[i].price}</p>
+                                     <p>  ${json.femaleshoes[i].reviews} <i class="fa fa-star text-warning"></i></span></p>
+                                     <a href="detail.html?id=${json.femaleshoes[i].id}" class="btn  mx-auto d-block my-2" "> Details</a>
+                                        <a href="#" class="btn  mx-auto d-block my-2"> Add To Cart </a>
+                                </div>
+                            </div>
+                        </div>
+
+                `
+                }
+               
+// for loop men shoes
+
+for (var i in json.maleshoes) {
+                    data += `
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 pt-4">
+                            <div class="shadow" id="products_card">
+                                <img src="${json.maleshoes[i].image}" 'height=200px' class="card-img-top" alt="">
+                                <div class="card-body">
+                                     <p>${json.maleshoes[i].description}</p>
+                                      <p>${json.maleshoes[i].brand}</p>  
+                                     <p class=" text-danger" id="sale">Sale: ${json.maleshoes[i].sale}</p>
+                                     <p>Size: ${json.maleshoes[i].size}</p>
+                                     <p>Price: ${json.maleshoes[i].price}</p>
+                                     <p> ${json.maleshoes[i].reviews} <i class="fa fa-star text-warning"></i></span></p>
+                                     <a href="detail.html?id=${json.maleshoes[i].id}" class="btn  mx-auto d-block my-2" "> Details</a>
+                                        <a href="#" class="btn  mx-auto d-block my-2"> Add To Cart </a>
+                                </div>
+                            </div>
+                        </div>
+
+                `
+                }
+//for loop  accessories
+for (var i in json.accessories) {
+                    data += `
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 pt-4">
+                            <div class="shadow" id="products_card">
+                                <img src="${json.accessories[i].image}" 'height=200px' class="card-img-top" alt="">
+                                <div class="card-body">
+                                     <p>${json.accessories[i].type}</p>
+                                      <p>${json.accessories[i].brand}</p>  
+                                     <p class=" text-danger" id="sale">Sale: ${json.accessories[i].sale}</p>
+                              
+                                     <p>Price: ${json.accessories[i].price}</p>
+                                     <p> <span>  ${json.accessories[i].reviews}<i class="fa fa-star text-warning"></i></span></p>
+                                     <a href="detail.html?id=${json.accessories[i].id}" class="btn  mx-auto d-block my-2" "> Details</a>
+                                        <a href="#" class="btn  mx-auto d-block my-2"> Add To Cart </a>
+                                </div>
+                            </div>
+                        </div>
+
+                `
+                }
+
+                console.log(data);
+
+
+                content.innerHTML = data;
+
+            })
+
+
+
+
+
+
+
+
+    </script>
+    <!-- MEN-SHIRT -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="row gy-5" id="content">
+
+                </div>
+            </div>
+
+
+            <!-- FEMALE-SHIRT -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 mx-auto">
+                        <div class="row gy-5" id="content">
+
+                        </div>
+                    </div>
+
+                    <!-- MAN-PANTS -->
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 mx-auto">
+                                <div class="row gy-5" id="content">
+
+                                </div>
+                            </div>
+
+                            <!-- FEMALE-PANTS -->
+
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 mx-auto">
+                                        <div class="row gy-5" id="content">
+
+                                        </div>
+                                    </div>
+
+                                    <!-- FOR JACKETS -->
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12 mx-auto">
+                                                <div class="row gy-5" id="content">
+
+                                                </div>
+                                            </div>
+
+                                            <!-- FOR HOODIES -->
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-12 mx-auto">
+                                                        <div class="row gy-5" id="content">
+
+                                                        </div>
+                                                    </div>
+                                                    <!-- FOR MEN SHOES -->
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 mx-auto">
+                                                                <div class="row gy-5" id="content">
+        
+                                                                </div>
+                                                            </div>
+                                                            <!-- FOR Acc -->
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-12 mx-auto">
+                                                                        <div class="row gy-5" id="content">
+                
+                                                                        </div>
+                                                                    </div>
+
+</body>
+
+</html>

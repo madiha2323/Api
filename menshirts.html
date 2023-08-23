@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+    <script>
+        fetch('./data.json')
+            .then(response => response.json())
+            .then(json => {
+
+                var content = document.getElementById("content");
+                var data = '';
+                // for loop
+
+                //for man-shirt 
+                for (var i in json.menshirt) {
+                    data += `
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 pt-4">
+                            <div class="shadow" id="products_card">
+                                <img src="${json.menshirt[i].image}" 'height=200px' class="card-img-top" alt="">
+                                <div  class="card-body">
+                                     
+                                     <p>${json.menshirt[i].category}</p
+                                      <p>${json.menshirt[i].brand}</p>  
+                                     <p class=" text-danger" id="sale">Sale: ${json.menshirt[i].sale}</p>
+                                
+                                     <p>Price: ${json.menshirt[i].price}</p>
+                                    
+                                     <p> <span> <i class="fa fa-star text-warning"></i>${json.menshirt[i].reviews}</span></p>
+
+                                     <a href="detail.html?id=${json.menshirt[i].id}" class="btn  mx-auto d-block my-2" "> Details</a>
+
+                                     <a href="#" class="btn  mx-auto d-block my-2"> Add To Cart </a>
+                                </div>
+                            </div>
+                        </div>
+
+                `
+                }
+
+            
+console.log(data);
+
+
+content.innerHTML = data;
+
+})
+
+
+
+
+
+
+
+
+</script>
+<!-- MEN-SHIRT -->
+<div class="container-fluid">
+<div class="row">
+<div class="col-12 mx-auto">
+<div class="row gy-5" id="content">
+
+</div>
+</div>
+</body>
+
+</html>

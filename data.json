@@ -1,0 +1,625 @@
+{
+    "menshirt":
+    [
+        {
+            "id": "1",
+            "category" : "For Men",
+            "price" : "12$",
+            "sale": "30%",
+            "brand" : "Louis Vuitton",
+            "size" : "SM/LG",
+            "name":"A-Line Shirt, Cotton Fabric.",
+            "reviews":"3",
+            "image" : "./img/mens1.png"
+                                                                   
+        },
+        {
+            "id": "2",
+            "category" : "For Men",
+            "price" : "6$",
+            "sale": "20%",
+            "brand" : "GUCCI",
+            "size" : "XL/LG",
+            "name":"Check Style Shirt.",
+            "reviews":"4",
+            "image" : "./img/mens2.png"
+                                                                   
+        },
+        {
+            "id": "3",
+            "category" : "For Men",
+            "price" : "9$",
+            "sale": "40%",
+            "brand" : "ZARA",
+            "size" : "SM/LG",
+            "name":"Plain Shirt.",
+            "reviews":"2",
+            "image" : "./img/mens3.png"
+                                                                   
+        },   
+        {
+            "id": "4",
+            "category" : "For Men",
+            "price" : "10$",
+            "sale": "60%",
+            "brand" : "Louis Vuitton",
+            "size" : "MD/LG",
+            "name":"Jut Black Shirt",
+            "reviews":"4",
+            "image" : "./img/mens4.png"
+                                                                   
+        },   
+        {
+            "id": "5",
+            "category" : "For Men",
+            "price" : "11$",
+            "sale": "35%",
+            "brand" : "GUCCI",
+            "size" : "SM/LG/XL",
+            "name":"Sky Blue Plain Shirt.",
+            "reviews":"5",
+            "image" : "./img/mens5.png"
+                                                                   
+        },
+        {
+            "id": "6",
+            "category" : "For Men",
+            "price" : "14$",
+            "sale": "70%",
+            "brand" : "ZARA",
+            "size" : "SM/LG",
+            "name":"3 Color Shirt.",
+            "reviews":"3",
+            "image" : "./img/ms.png"
+                                                                   
+        }
+           
+    ],
+
+    "femaleshirt": [
+
+            {
+                "id": "f1",
+                "category" : "For Women",
+                "price" : "11$",
+                "sale": "50%",
+                "brand" : "Louis Vuitton",
+                "size" : "SM/LG",
+                "name":"Danim Shirt",
+                "reviews":"3",
+                "image" : "./img/girls1.png"
+                                                                       
+            },
+            {
+                "id": "f2",
+                "category" : "For Women",
+                "price" : "10$",
+                "sale": "70%",
+                "brand" : "GUCCI",
+                "size" : "SM/LG/MD",
+                "name":"Moose Styling",
+                "reviews":"4",
+                "image" : "./img/girls2.png"
+                                                                       
+            },
+            {
+                "id": "f3",
+                "category" : "For Women",
+                "price" : "8$",
+                "sale": "60%",
+                "brand" : "ZARA",
+                "size" : "SM/LG",
+                "name":"Sleeve Up Style ",
+                "reviews":"2",
+                "image" : "./img/girls3.png"
+                                                                       
+            },
+            {
+                "id": "f4",
+                "category" : "For Women",
+                "price" : "5$",
+                "sale": "30%",
+                "brand" : "Louis Vuitton",
+                "size" : "MD/LG/XL",
+                "name":"Butterfly Classic",
+                "reviews":"5",
+                "image" : "./img/girls4.png"
+                                                                       
+            },
+            {
+                "id": "f5",
+                "category" : "For Women",
+                "price" : "8$",
+                "sale": "45%",
+                "brand" : "GUCCI",
+                "size" : "SM/LG",
+                "name":"V Neck Layout",
+                "reviews":"3",
+                "image" : "./img/girls5.png"
+                                                                       
+            },{
+                "id": "f6",
+                "category" : "female",
+                "price" : "9$",
+                "sale": "50%",
+                "brand" : "ZARA",
+                "size" : "SM/LG",
+                "name":"Short Shirt Style ",
+                "reviews":"3",
+                "image" : "./img/girls6.png"
+                                                                       
+            }
+
+    ],
+    "jackets":[
+        {
+            "id":"j1",
+            "price" : "12$",
+            "sale":"20%",
+            "brand" :"GUCCI",
+            "size":"MD/LG",
+            "name":"Faux Leather Belted Motorcycle Jacket",
+            "reviews":"2",
+            "image":"./img/jacket1.png"
+        },
+        {
+            "id":"j2",
+            "price" : "5$",
+            "sale":"30%",
+            "brand" :"Louis Vuitton",
+            "size":"MD/LG/XL",
+            "name":" Leather Jacket",
+            "reviews":"3",
+            "image":"./img/jacket2.png"
+        },
+        {
+            "id":"j3",
+            "price" : "22$",
+            "sale":"40%",
+            "brand" :"ZARA",
+            "size":"SL/MD",
+            "name":"Sea All-Gender Jacket",
+            "reviews":"4",
+            "image":"./img/jacket3.png"
+        },
+        {
+            "id":"j4",
+            "price" : "21$",
+            "sale":"45%",
+            "brand" :"GUCCI",
+            "size":"LG/XL",
+            "name":"Bomber Jacket",
+            "reviews":"5",
+            "image":"./img/jacket4.png"
+        },
+        {
+            "id":"j5",
+            "price" : "11$",
+            "sale":"25%",
+            "brand" :"Louis Vuitton",
+            "size":"MD/LG",
+            "name":"1996 Retro Nuptse Jacket",
+            "reviews":"2.0",
+            "image":"./img/jacket5.png"
+        },
+        {
+            "id":"j6",
+            "price" : "6$",
+            "sale":"22%",
+            "brand" :"GUCCI",
+            "size":"SL/MD",
+            "name":"Apres Duvet Striped Quilted Down Ski Jacket",
+            "reviews":"3",
+            "image":"./img/jacket6.png"
+        }
+     
+    ],
+    "hoodies":
+    [
+        
+            {
+                "id":"h1",
+                "price" : "12$",
+                "sale":"40%",
+                "brand" :"GUCCI",
+                "size":"MD/LG",
+                "name":"Black Hoodie",
+                "reviews":"3",
+                "image":"./img/hoodie1.png"
+            },
+            {
+                "id":"h2",
+                "price" : "22$",
+                "sale":"25%",
+                "brand" :"ZARA",
+                "size":"SM/MD/LG",
+                "name":"Swagy Hoodi",
+                "reviews":"2",
+                "image":"./img/hoodie2.png"
+            },
+            {
+                "id":"h3",
+                "price" : "9$",
+                "sale":"40%",
+                "brand" :"Louis Vuitton",
+                "size":"SL/MD",
+                "name":"Drip Hoodz",
+                "reviews":"4",
+                "image":"./img/hoodie3.png"
+            },
+            {
+                "id":"h4",
+                "price" : "22$",
+                "sale":"50%",
+                "brand" :"GUCCI",
+                "size":"MD/LG",
+                "name":"Zip-Zipper",
+                "reviews":"4",
+                "image":"./img/hoodie4.png"
+            },
+            {
+                "id":"h5",
+                "price" : "23$",
+                "sale":"28%",
+                "brand" :"ZARA",
+                "size":"SM/MD/LG/XL",
+                "name":"Slim-fit",
+                "reviews":"2",
+                "image":"./img/hoodie5.png"
+            },
+            {
+                "id":"h6",
+                "price" : "23$",
+                "sale":"35%",
+                "brand" :"Louis Vuitton",
+                "size":"MD",
+                "name":"Shark Hoodie",
+                "reviews":"5",
+                "image":"./img/hoodie6.png"
+            }
+
+        
+    ],
+    "femaleshoes":[
+        {
+            "id":"s1",
+            "price" : "23$",
+            "sale":"18%",
+            "brand" :"Nike",
+            "size":"35",
+            "category": "female",
+            "description":" For Your Feet",
+            "reviews":"2",
+            "image":"./img/females1.png"
+        },
+        {
+            "id":"s2",
+            "price" : "13$",
+            "sale":"18%",
+            "brand" :"Addidas",
+            "category": "female",
+            "size":"24",
+            "description":"A Care For Your Comfort",
+            "reviews":"5",
+            "image":"./img/heels1.png"
+        },
+        {
+            "id":"s3",
+            "price" : "11$",
+            "sale":"28%",
+            "brand" :" Nike",
+            "category": "female",
+            "size":"32",
+            "description":"For You",
+            "reviews":"4",
+            "image":"./img/heels2.png"
+        },
+        {
+
+        
+        "id":"s4",
+        "price" : "11$",
+        "sale":"28%",
+        "brand" :" Nike",
+        "category": "female",
+        "size":"32",
+        "description":"High Heels For Your Feet",
+        "reviews":"4",
+        "image":"./img/heels3.png"
+    },
+
+        {
+            "id":"s5",
+            "price" : "9$",
+            "sale":"38%",
+            "brand" :"Addidas",
+            "category": "female",
+            "size":"24",
+            "description":"Fancy Heels  For Your Feet",
+            "reviews":"3",
+            "image":"./img/heels4.png"
+        },
+        {
+        "id":"s6",
+        "price" : "11$",
+        "sale":"28%",
+        "brand" :" Nike",
+        "category": "female",
+        "size":"32",
+        "description":"Pumps For Your Feet",
+        "reviews":"4",
+        "image":"./img/females6.png"
+    }
+],
+    "maleshoes":
+    [
+        {
+            "id":"sm1",
+            "price" : "13$",
+            "sale":"18%",
+            "brand" :"Nike",
+            "category": "male",
+            "size":"26",
+            "description":"Give your compliment",
+            "reviews":"2",
+            "image":"./img/men shoes4.png"
+        },
+        {
+            "id":"sm2",
+            "price" : "15$",
+            "sale":"40%",
+            "brand" :"Addidas",
+            "category": "male",
+            "size":"44",
+            "description":"Have Your Own Style",
+            "reviews":"5",
+            "image":"./img/men shoes5.png"
+    },
+    {
+        "id":"sm3",
+        "price" : "15$",
+        "sale":"40%",
+        "brand" :"Addidas",
+        "category": "male",
+        "size":"44",
+        "description":"Fit For You",
+        "reviews":"5",
+        "image":"./img/men shoes6.png"
+},
+{
+    "id":"sm4",
+    "price" : "15$",
+    "sale":"40%",
+    "brand" :"Addidas",
+    "category": "male",
+    "size":"44",
+    "description":"Countor Style",
+    "reviews":"5",
+    "image":"./img/men shoes5.png"
+},
+{
+    "id":"sm5",
+    "price" : "15$",
+    "sale":"40%",
+    "brand" :"Addidas",
+    "category": "male",
+    "size":"44",
+    "description":"For Your Classic Look",
+    "reviews":"5",
+    "image":"./img/shoes2.png"
+},
+{
+    "id":"sm6",
+    "price" : "15$",
+    "sale":"40%",
+    "brand" :"Addidas",
+    "category": "male",
+    "size":"44",
+    "description":"Made For You",
+    "reviews":"5",
+    "image":"./img/shoes3.png"
+}
+        
+    ],
+    "menpants":
+    [ 
+         {
+        "id":"p1",
+        "type":"Denim",
+        "price" : "13$",
+        "sale":"18%",
+        "brand" :"B-one",
+        "size":"SM/MD",
+        "description":"Classic Grey Fit For You",
+        "reviews":"5",
+        "image":"./img/pmens6 (1).png"
+    },
+    {
+        "id":"p2",
+        "type":"Loose",
+        "price" : "11$",
+        "sale":"18%",
+        "brand" :"meme",
+        "size":"SM/MD/LG/XL",
+        "description":"Joogers For You",
+        "reviews":"4",
+        "image":"./img/pmens6 (2).png"
+    },
+    {
+        "id":"p3",
+        "type":"Skinny",
+        "price" : "21$",
+        "sale":"18%",
+        "brand" :"J.J",
+        "size":"SM/MD/XL",
+        "description":"Funky funk For You",
+        "reviews":"3",
+        "image":"./img/pmens6 (3).png"
+    },
+    {
+        "id":"p4",
+        "type":"Fit Style",
+        "price" : "13$",
+        "sale":"20%",
+        "brand" :"B-one",
+        "size":"SM/MD/LG",
+        "description":"Straight Fit For You",
+        "reviews":"2",
+        "image":"./img/pmens6 (4).png"
+    },
+    {
+        "id":"p5",
+        "type":"Straight",
+        "price" : "23$",
+        "sale":"38%",
+        "brand" :"meme",
+        "size":"SM/MD",
+        "description":"Blue Danim Only For You",
+        "reviews":"2",
+        "image":"./img/pmens6 (5).png"
+    },
+    {
+        "id":"p6",
+        "type":"Cigratte Pant",
+        "price" : "13$",
+        "sale":"55%",
+        "brand" :"J.J",
+        "size":"SM/LG",
+        "description":"A straight look",
+        "reviews":"3.8",
+        "image":"./img/pmens6 (6).png"
+    }
+
+    ],
+    "femalepants":[
+        {
+            "id":"fp1",
+            "type":"Denim",
+            "price" : "13$",
+            "sale":"18%",
+            "brand" :"Outfiters",
+            "size":"SM/MD",
+            "description":"Made For You",
+            "reviews":"5",
+            "image":"./img/fpants6 (1).png"
+        },
+        {
+            "id":"fp2",
+            "type":"skinny",
+            "price" : "10$",
+            "sale":"10%",
+            "brand" :"Khaadi",
+            "size":"SM/MD/LG/XL",
+            "description":"Have Your Own Style",
+            "reviews":"4",
+            "image":"./img/fpants6 (2).png"
+        },
+        {
+            "id":"fp3",
+            "type":"Ripe Pant",
+            "price" : "22$",
+            "sale":"18%",
+            "brand" :"Limelight",
+            "size":"SM/MD/XL",
+            "description":"A Classic Wear",
+            "reviews":"3",
+            "image":"./img/fpants6 (3).png"
+        },
+        {
+            "id":"fp4",
+            "type":"Skinny",
+            "price" : "33$",
+            "sale":"20%",
+            "brand" :"Outfitters",
+            "size":"SM/MD/LG",
+            "description":"Slip Fit Jeans",
+            "reviews":"2",
+            "image":"./img/fp1.png"
+        },
+        {
+            "id":"fp5",
+            "type":"Cigratte Pant",
+            "price" : "23$",
+            "sale":"48%",
+            "brand" :"Khaadi",
+            "size":"SM/MD",
+            "description":"Countor Style",
+            "reviews":"2",
+            "image":"./img/fp2.png"
+        },
+        {
+            "id":"fp6",
+            "type":"Classic Ripe",
+            "price" : "13$",
+            "sale":"55%",
+            "brand" :"Limelight",
+            "size":"SM/LG",
+            "description":"For Simple Look",
+            "reviews":"3.8",
+            "image":"./img/fp3.png"
+        } 
+    ],
+
+    "accessories":[
+        {
+            "id": "a1",
+            "type" : "Watch",
+            "brand": "Citizen",
+            "price":"10$",
+            "sale":"10%",
+            "description": "Carry Your Time",
+            "image":"./img/Watch1.png",
+            "reviews":"4"
+        },
+        {
+            "id": "a2",
+            "type" : "Watch",
+            "brand": "Citizen",
+            "price":"15$",
+            "sale":"20%",
+            "description": "For Your Classic Look",
+            "image":"./img/Watch2.png",
+            "reviews":"5"
+        },
+        {
+            "id": "a3",
+            "type" : "Watch",
+            "brand": "Citizen",
+            "price":"10$",
+            "sale":"10%",
+            "description": "Have Your Own Style",
+            "image":"./img/Watch3.png",
+            "reviews":"3"
+        },{
+            "id": "a4",
+            "type" : "Sunglasses",
+            "brand": "Ray Ban",
+            "price":"5$",
+            "sale":"30%",
+            "description": "Wear What You Love",
+            "image":"./img/sun2.png",
+            "reviews":"4"
+        },
+        {
+            "id": "a5",
+            "type" : "Sunglasses",
+            "brand": "Ray Ban",
+            "price":"20$",
+            "sale":"11%",
+            "description": "Carry Your View",
+            "image":"./img/sunglasses2.png",
+            "reviews":"2.3"
+        },
+        {
+            "id": "a6",
+            "type" : "Sunglasses",
+            "brand": "Ray Ban",
+            "price":"14$",
+            "sale":"30%",
+            "description": "Wear Your choise, Wear Your Style",
+            "image":"./img/sun1.png",
+            "reviews":"2"
+        }
+    ]
+ }
+    
