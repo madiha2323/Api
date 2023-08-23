@@ -41,8 +41,10 @@ Dive into the Fashion Products API now and start exploring the world of fashion 
 
 ![api5](https://github.com/madiha2323/Api/assets/109577656/60bff317-7158-4adc-bd03-355d9941937d)
 
+![api6](https://github.com/madiha2323/Api/assets/109577656/434808fb-e20c-4c49-921d-0200353874ff)
+
+
 ![api7](https://github.com/madiha2323/Api/assets/109577656/1b3266fd-afb1-4b65-b131-2eb815541700)
 
-![api6](https://github.com/madiha2323/Api/assets/109577656/434808fb-e20c-4c49-921d-0200353874ff)
 
 ![details](https://github.com/madiha2323/Api/assets/109577656/55d10250-85e3-4601-bae7-cee38fbaf13a)
