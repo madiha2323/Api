@@ -1,2 +1,2 @@
 # json API
- ## It is built up with bootstrap, json and javascript.
+## An API of products designed on bootstrap.
