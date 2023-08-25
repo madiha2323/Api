@@ -1,5 +1,5 @@
 # Fashion Products API 🧥👗👠
-##json API
+## json API
 Welcome to the Fashion Products API repository! This API provides a diverse selection of fashion items, categorized to simplify your style exploration. From shirts to shoes, jackets to accessories, you'll find a range of products for both men and women.
 
 ## Usage
